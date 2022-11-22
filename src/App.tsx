@@ -77,7 +77,14 @@ function App() {
         margin: '0 auto',
       }}
     >
-      <div style={{ textAlign: 'center' }}>
+      <div
+        style={{
+          textAlign: 'center',
+          fontWeight: 'bold',
+          color: isWinner ? 'green' : 'red',
+          textTransform: 'uppercase',
+        }}
+      >
         {isWinner && 'Congratulations! You won! - Refresh to try again'}
         {isLooser && 'You lost :( ! Good luck next time! - Refresh to try again'}
       </div>
