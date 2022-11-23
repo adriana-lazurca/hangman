@@ -86,9 +86,9 @@ const LEFT_LEG = (
 
 const BODY_PARTS = [HEAD, BODY, RIGHT_ARM, LEFT_ARM, RIGHT_LEG, LEFT_LEG];
 
-type HangmanDrawingProps = { numberOfGuesses: number };
+type DrawingProps = { numberOfGuesses: number };
 
-export const HangmanDrawing = ({ numberOfGuesses }: HangmanDrawingProps) => (
+export const Drawing = ({ numberOfGuesses }: DrawingProps) => (
   <div style={{ position: 'relative' }}>
     {BODY_PARTS.slice(0, numberOfGuesses).map((part, index) => (
       <React.Fragment key={index}>{part}</React.Fragment>

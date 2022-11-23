@@ -1,6 +1,6 @@
-type HangmanWordProps = { reveal?: boolean; wordToGuess: string; guessedLetters: string[] };
+type WordProps = { reveal?: boolean; wordToGuess: string; guessedLetters: string[] };
 
-export const HangmanWord = ({ reveal = false, wordToGuess, guessedLetters }: HangmanWordProps) => {
+export const Word = ({ reveal = false, wordToGuess, guessedLetters }: WordProps) => {
   return (
     <div
       style={{
